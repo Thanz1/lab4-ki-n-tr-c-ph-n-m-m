@@ -4,3 +4,38 @@ GET {{lab1_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+POST {{lab1_HostAddress}}/api/message/direct
+Content-Type: application/json
+
+"Hello Direct Exchange"
+
+###
+POST {{lab1_HostAddress}}/api/message/topic/log.error
+Content-Type: application/json
+
+"Error message for topic"
+
+###
+POST {{lab1_HostAddress}}/api/message/topic/log.info
+Content-Type: application/json
+
+"Info message for topic"
+
+###
+POST {{lab1_HostAddress}}/api/message/headers/mobile
+Content-Type: application/json
+
+"Message for mobile header"
+
+###
+POST {{lab1_HostAddress}}/api/message/headers/web
+Content-Type: application/json
+
+"Message for web header"
+
+###
+POST {{lab1_HostAddress}}/api/message/fanout
+Content-Type: application/json
+
+"Broadcast message"
+
